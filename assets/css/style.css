@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container__header__branch {
+  height: 55vh;
+  background-color: #0C0D26;
+  background-image: url(https://www.simbrella.com/site/templates/img/vacancies_header_bg.svg);
+  background-size: cover;
+  position: relative; }
+  .container__header__branch_logo {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    justify-items: center;
+    align-items: center; }
+
+.container__header__branch_p {
+  padding-top: 15%;
+  padding-left: 60px;
+  color: white; }
+
+.fixed-nav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  z-index: 2;
+  transition: 0.5s; }
+  .fixed-nav .container__header_branch_logo_wrapper-white {
+    opacity: -1;
+    position: absolute; }
+  .fixed-nav .container__header__branch_logo_wrapper-color {
+    opacity: 1;
+    position: absolute; }
+
+.container__header__branch_logo_wrapper {
+  width: 144px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin: 10px 0 0 60px; }
+  .container__header__branch_logo_wrapper-color {
+    opacity: -1; }
+
+.branches_block {
+  padding: 100px 0;
+  background: #F6F8FE; }
+  .branches_block > div {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; }
+
+.branches_grid {
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-gap: 30px 30px; }
+  .branches_grid article {
+    min-height: 410px;
+    padding: 40px 40px 40px;
+    border: 1px solid #E6E6E6;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 40px) calc(100% - 40px);
+    border-radius: 4px; }
+  .branches_grid h2 {
+    padding: 0 0 32px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #FF931E; }
+  .branches_grid dt {
+    padding: 0 0 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #99A3B2; }
+  .branches_grid dd {
+    min-height: 72px;
+    padding: 0 0 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000; }
+  .branches_grid a {
+    color: #000;
+    text-decoration: none; }
+
+footer#footer__branches {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: stretch;
+  padding: 35px 0 25px;
+  min-height: calc(100vh - 80px);
+  background-color: #000;
+  background-image: url(../img/footer_bg.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%; }
+  footer#footer__branches.compact__brn {
+    min-height: 1px;
+    padding: 34px 0 34px;
+    background-image: none; }
+    footer#footer__branches.compact__brn .footer_last__brn {
+      padding: 0 20px; }
+
+.footer_last__brn {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch; }
+
+.jis__brn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center; }
+  .jis__brn p {
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    line-height: 2.67;
+    color: #fff; }
+  .jis__brn a {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.67;
+    color: #fff;
+    text-decoration: none;
+    position: relative; }
+  .jis__brn a::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(https://www.simbrella.com/site/templates/img/jis_logo.svg) no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px); }
+
+.copyright__brn {
+  width: calc(100% - 360px);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #999; }
